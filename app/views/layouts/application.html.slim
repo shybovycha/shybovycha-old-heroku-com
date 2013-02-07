@@ -1,0 +1,18 @@
+doctype 5
+html
+	head
+		title My personal website
+
+		= stylesheet_link_tag "application", :media => "all"
+		= stylesheet_link_tag "pagedown", :media => "all"
+
+		= javascript_include_tag "jquery-1.9.1"
+		= javascript_include_tag "Markdown.Converter"
+		= javascript_include_tag "Markdown.Sanitizer"
+		= javascript_include_tag "Markdown.Editor"
+		= javascript_include_tag "pages"
+
+		= csrf_meta_tags
+
+	body
+		= yield
