@@ -1,18 +1,34 @@
 doctype 5
 html
-	head
-		title My personal website
+    head
+        title My personal website
 
-		= stylesheet_link_tag "application", :media => "all"
-		= stylesheet_link_tag "pagedown", :media => "all"
+        = stylesheet_link_tag "application", :media => "all"
+        = stylesheet_link_tag "pagedown", :media => "all"
 
-		= javascript_include_tag "jquery-1.9.1"
-		= javascript_include_tag "Markdown.Converter"
-		= javascript_include_tag "Markdown.Sanitizer"
-		= javascript_include_tag "Markdown.Editor"
-		= javascript_include_tag "pages"
+        = javascript_include_tag "jquery-1.9.1"
+        = javascript_include_tag "Markdown.Converter"
+        = javascript_include_tag "Markdown.Sanitizer"
+        = javascript_include_tag "Markdown.Editor"
+        = javascript_include_tag "pages"
 
-		= csrf_meta_tags
+        = csrf_meta_tags
 
-	body
-		= yield
+    body
+        div class="moo-logo"
+            .circle.c1
+            .circle.c2
+            .circle.c3
+            .circle.c4
+            .circle.c5
+            .central
+                div class="central-inner"
+                    | >
+                    span class="central-content" _
+            .circle.c6
+            .circle.c7
+
+        div class="terminal-input"
+            input name="terminal_cmd" title="Enter something here"
+
+        = yield
