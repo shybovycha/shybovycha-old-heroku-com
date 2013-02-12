@@ -23,4 +23,8 @@ jQuery(document).ready(function() {
     var editor = new Markdown.Editor(converter, '', options);
 
     editor.run();
+
+    SyntaxHighlighter.config['tagName'] = 'pre';
+    SyntaxHighlighter.config['html-script'] = true;
+    SyntaxHighlighter.all();
 });
