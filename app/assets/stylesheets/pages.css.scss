@@ -1,5 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded&subset=latin,latin-ext);
 
+body {
+  background:
+    radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
+    linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0 !important;
+  background-color: slategray  !important;
+  background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px  !important;
+
+  .content {
+    position: absolute;
+    top: 250px;
+    padding-left: 150px;
+    width: 75%;
+
+    .post, .sub-content {
+      width: 100%;
+      background:
+        radial-gradient(circle at 50% 59%, rgba(210, 202, 171, 0.2) 3%, rgba(54, 78, 39, 0.2) 4%, rgba(54, 78, 39, 0.2) 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+        radial-gradient(circle at 50% 41%, rgba(54, 78, 39, 0.2) 3%, rgba(210, 202, 171, 0.2) 4%, rgba(210, 202, 171, 0.2) 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+        radial-gradient(circle at 50% 59%, rgba(210, 202, 171, 0.2) 3%, rgba(54, 78, 39, 0.2) 4%, rgba(54, 78, 39, 0.2) 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+        radial-gradient(circle at 50% 41%, rgba(54, 78, 39, 0.2) 3%, rgba(210, 202, 171, 0.2) 4%, rgba(210, 202, 171, 0.2) 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+        radial-gradient(circle at 100% 50%, rgba(210, 202, 171, 0.2) 16%, rgba(210,202,171,0) 17%),
+        radial-gradient(circle at 0% 50%, rgba(54, 78, 39, 0.2) 16%, rgba(54,78,39,0) 17%),
+        radial-gradient(circle at 100% 50%, rgba(210, 202, 171, 0.2) 16%, rgba(210,202,171,0) 17%) 50px 50px,
+        radial-gradient(circle at 0% 50%, rgba(54, 78, 39, 0.2) 16%, rgba(54,78,39,0) 17%) 50px 50px;
+      background-color:#Fa9a00;
+      background-size:100px 100px;
+      border-radius: 8px;
+      border: 2px solid #dedede;
+      padding: 10px 30px;
+    }
+  }
+}
+
 .central-content {
   animation-name: blinking;
   animation-duration: 1s;

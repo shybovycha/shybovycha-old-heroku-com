@@ -12,6 +12,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+#gem 'coderay'
 gem 'kramdown'
 gem 'slim'
 gem 'jquery-rails'

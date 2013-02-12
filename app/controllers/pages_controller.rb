@@ -1,6 +1,8 @@
 require 'kramdown'
 
 class PagesController < ApplicationController
+  before_filter :authenticate_user!, :except => [ :index, :show ]
+
   # GET /pages
   # GET /pages.json
   def index

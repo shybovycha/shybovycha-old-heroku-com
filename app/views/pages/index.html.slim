@@ -1,0 +1,16 @@
+- if user_signed_in?
+  = link_to 'New Page', new_page_path
+
+- @pages.each do |page|
+    h1
+      = page.title
+
+    == Kramdown::Document.new(page.body, { :coderay_line_numbers => :table }).to_html
+
+    - if user_signed_in?
+      = link_to 'Show', page
+      = link_to 'Edit', edit_page_path(page)
+      = link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }
+
+- if user_signed_in?
+  = link_to 'New Page', new_page_path

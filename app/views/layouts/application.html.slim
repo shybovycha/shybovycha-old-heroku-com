@@ -13,6 +13,7 @@ html
         = javascript_include_tag "pagedown/Markdown.Converter"
         = javascript_include_tag "pagedown/Markdown.Sanitizer"
         = javascript_include_tag "pagedown/Markdown.Editor"
+        = javascript_include_tag "syntax_highlighter/XRegExp"
         = javascript_include_tag "syntax_highlighter/shCore"
         = javascript_include_tag "syntax_highlighter/brushes/shBrushAS3"
         = javascript_include_tag "syntax_highlighter/brushes/shBrushBash"
@@ -48,4 +49,11 @@ html
         div class="terminal-input"
             input name="terminal_cmd" title="Enter something here"
 
-        = yield
+        .notice
+            = notice
+
+        .alert
+            = alert
+
+        .content
+            = yield
