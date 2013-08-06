@@ -1,0 +1,28 @@
+h1
+    = t 'My life. Timelined.'
+
+= link_to 'New Post', new_post_path
+
+.timeline-main
+    ul.cbp_tmtimeline
+        - @posts.each do |post|
+            li
+                time.cbp_tmtime datetime="2013-04-10 18:30"
+                    span
+                        = post.created_at.strftime('%d/%m/%Y')
+
+                    span
+                        = post.created_at.strftime('%H:%M')
+
+                div class="cbp_tmicon cbp_tmicon-#{ post.icon }"
+                / cbp_tmicon-earth | cbp_tmicon-screen | cbp_tmicon-phone -->
+
+                .cbp_tmlabel
+                    h2
+                        = post.title
+                    p
+                        == post.body
+
+                // <td><%= link_to 'Show', post %></td>
+                // <td><%= link_to 'Edit', edit_post_path(post) %></td>
+                // <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
